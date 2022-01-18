@@ -1,0 +1,63 @@
+[
+	{
+		"name": "Amakis Sofa Full Set",
+		"price": 179999.99,
+		"featured": true,
+		"rating": 6.7,
+                "company": "caressa"
+	},
+	{
+                "name": "Boye Bed",
+                "price": 99999.99,
+                "featured": true,
+                "rating": 6.9,
+                "company": "liddy"
+        },
+	{
+                "name": "Amakis Sofa Duo",
+                "price": 149999.99,
+                "featured": true,
+                "rating": 7.5,
+                "company": "ikea"
+        },
+	{
+                "name": "Amakis Sofa Mini",
+                "price": 59999.99,
+                "featured": false,
+                "rating": 4.7,
+                "company": "caressa"
+        },
+	{
+                "name": "Reagal Table",
+                "price": 28999.99,
+                "featured": false,
+                "company": "caressa"
+        },
+	{
+                "name": "Vicerys Sofa",
+                "price": 239999.99,
+                "featured": true,
+                "rating": 8.5,
+                "company": "liddy"
+        },
+	{
+                "name": "Daenerys Bean Bag",
+                "price": 49999.99,
+                "featured": true,
+                "rating": 5.7,
+                "company": "marcos"
+        },
+	{
+                "name": "Kunle Couch Duo",
+                "price": 249999.99,
+                "featured": true,
+                "rating": 6.7,
+                "company": "ikea"
+        },
+	{
+                "name": "Kunle Couch Prime",
+                "price": 349999.99,
+                "rating": 8.7,
+                "company": "marcos"
+        }
+]

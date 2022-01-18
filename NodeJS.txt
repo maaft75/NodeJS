@@ -1,0 +1,15 @@
+WEAK AREAS
+1. AsyncWrapper
+2. Database connection, schema and relationships.
+3. Middlewares.
+4. Super meaning.
+
+WHAT I HAVE LEARNT
+1. Setting up an express server.
+2. Controllers.
+3. Routes
+4. Saving the connecting string inside the .env file.
+5. Various MongoDB queries.
+6. Asyncwrapper Middleware
+7. Setting up a NotFound middleware.
+8. Model validations.
