@@ -4,10 +4,15 @@ const app = express()
 const connect = require('./db/connect')
 const authRoutes = require('./routes/auth')
 const jobsRoutes = require('./routes/jobs')
+const errorHandler = require('./middlewares/errorHandler')
 
-//ROUTES
+//MIDDLEWARES & ROUTES
+app.use(express.json())
+
 app.use('/api/v1/auth', authRoutes)
 app.use('/api/v1/jobs', jobsRoutes)
+
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 3000
 
