@@ -8,7 +8,7 @@ registerUser = async (req, res, next) => {
         const user = await User.create(req.body)
         return res.status(201).json(user)
     } catch (error) {
-        if(error.code ==11000){
+        if(error.code == 11000){
             return res.status(400).json({message: "This username is not available."})
         }
         return next(new customError(error, 400))
