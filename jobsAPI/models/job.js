@@ -1,25 +1,26 @@
 const mongoose = require('mongoose')
+const User = require('./user')
 
 const jobSchema = mongoose.Schema({
     company : {
         type: String,
-        required: [true, "This is a required field"]
+        required: [true, "Company is a required field"]
     },
     role : {
         type: String,
-        required: [true, "This is a required field"]
+        required: [true, "Role is a required field"]
     },
     description : {
         type: String,
-        required: [true, "This is a required field"]
+        required: [true, "Description is a required field"]
     },
     requirements : {
         type: String,
-        required: [true, "This is a required field"]
+        required: [true, "Requirements is a required field"]
     },
     salary : {
         type: Number,
-        required: [true, "This is a required field"]
+        required: [true, "Salary is a required field"]
     },
     datePosted : {
         type: Date,
@@ -28,13 +29,21 @@ const jobSchema = mongoose.Schema({
     },
     expires : {
         type: Date,
-        required: [true, "This is a required field"]
+        required: [true, "Closing date is a required field"]
+    },
+    status: {
+        type: String,
+        enum: {
+            values: ['Scheduled for interview', 'Declined', 'Pending'],
+            message: "Status can only be Pending, Declined or Scheduled for interview"
+        },
+        default: "Pending"
     },
     poster : {
         type: mongoose.Schema.Types.ObjectId,
         ref: User,
-        required: [true, "This is a required field"]
-    },
+        required: [true, "Poster is a required field"]
+    }
 })
 
 module.exports = mongoose.model('Job', jobSchema)
